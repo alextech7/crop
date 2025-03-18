@@ -1,0 +1,102 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://example.org/schema/MSC" targetNamespace="http://example.org/schema/MSC" elementFormDefault="qualified">
+    <xs:element name="project">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="install">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="path" type="xs:string" />
+                            <xs:element name="url" type="xs:string" />
+                            <xs:element name="mode" type="xs:string" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="warehouse">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="db" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="name" type="xs:string" />
+                                        <xs:element name="driver" type="xs:string" />
+                                        <xs:element name="server">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="host" type="xs:string" />
+                                                    <xs:element name="port" type="xs:integer" />
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="role">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="admin">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="login" type="xs:string" />
+                                                                <xs:element name="pass" type="xs:string" />
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element name="user">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="login" type="xs:string" />
+                                                                <xs:element name="pass" type="xs:string" />
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="id" type="xs:string" use="required" />
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="relation" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="db" type="xs:string" />
+                                    </xs:sequence>
+                                    <xs:attribute name="name" type="xs:string" use="required" />
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="upload">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="dir" type="xs:string" />
+                            <xs:element name="path" type="xs:string" />
+                            <xs:element name="url" type="xs:string" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="logLevel" type="xs:string" />
+                <xs:element name="debug">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="output" type="xs:string" />
+                            <xs:element name="layer" maxOccurs="unbounded" type="xs:string" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="test">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="url" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="path" type="xs:string" />
+                                    </xs:sequence>
+                                    <xs:attribute name="name" type="xs:string" use="required" />
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
