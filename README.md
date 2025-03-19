@@ -1,9 +1,6 @@
-Crop::Config - A configuration management module for the Crop framework
+Crop - Creazilla on Perl (cd abbreviated as Crop) is a Perl framework with the main goal to make writing web scripts much easy
 
 ## DESCRIPTION
-
-Crop provides a structured way to manage configuration data for the Crop framework. 
-It supports multiple sections such as install, warehouse, upload, and more.
 
 Creazilla on Perl (cd abbreviated as Crop) is a Perl framework with the main goal to make writing web scripts much easy. No wide experience is required to programming a top-level script. The SQL-layer is hidden from a programmer.
 
@@ -27,7 +24,7 @@ To install this module, run the following commands:
 
 ## Sponsors
 
-Creazilla on Perl has been sponsored by Creazilla.com. 
+Creazilla on Perl has been sponsored by [Creazilla.com](http://Creazilla.com). 
 
 ## Core Developers
 
