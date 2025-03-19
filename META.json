@@ -1,0 +1,24 @@
+{
+    "name": "Crop-Config",
+    "version": "0.1.25",
+    "abstract": "A configuration management module for Crop framework",
+    "author": ["Alex <alextechnologies@gmail.com>"],
+    "license": ["perl"],
+    "resources": {
+        "repository": {
+            "url": "https://github.com/yourusername/crop-config",
+            "web": "https://github.com/yourusername/crop-config"
+        },
+        "bugtracker": {
+            "web": "https://github.com/yourusername/crop-config/issues"
+        }
+    },
+    "prereqs": {
+        "runtime": {
+            "requires": {
+                "perl": "5.006",
+                "Test::More": "0"
+            }
+        }
+    }
+}
