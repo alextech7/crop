@@ -1,5 +1,7 @@
 package Crop::Config;
 
+our $VERSION = '0.1.25';
+
 =begin nd
 Class: Crop::Config
 	Configuration data.

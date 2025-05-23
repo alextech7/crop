@@ -17,4 +17,8 @@ my $min_pc = 0.18;
 eval "use Pod::Coverage $min_pc";
 plan skip_all => "Pod::Coverage $min_pc required for testing POD coverage"
     if $@;
+
+use Test::Pod::Coverage;
+
+# Check that all public functions and methods are documented
 all_pod_coverage_ok();

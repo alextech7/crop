@@ -22,6 +22,39 @@ To install this module, run the following commands:
     make test
     make install
 
+## DEPENDENCIES
+
+The following Perl modules are required to use Crop:
+
+- XML::LibXML
+- Time::Stamp
+- Clone
+- XML::LibXSLT
+- JSON
+- CGI::Cookie
+- CGI::Fast
+
+Install these modules using CPAN or your package manager before proceeding.
+
+## CONTRIBUTING
+
+To contribute to Crop, follow these steps:
+
+1. Fork the repository on GitHub.
+2. Clone your fork locally.
+3. Install dependencies using `cpan` or `cpanm`.
+4. Run tests using `make test`.
+5. Submit a pull request with your changes.
+
+## CHANGELOG
+
+### Version 0.1.25 (30 April 2025)
+
+- Initial release of Crop framework.
+- Added support for class attributes inheritance.
+- Implemented role-based access system.
+- Added multiple warehouse support.
+
 ## Sponsors
 
 Creazilla on Perl has been sponsored by [Creazilla.com](http://Creazilla.com). 
@@ -39,4 +72,4 @@ Alex
 Apache 2.0
 
 See also : https://creazilla.com/pages/creazilla-on-perl
- 
+
