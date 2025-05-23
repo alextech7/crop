@@ -57,7 +57,7 @@ To contribute to Crop, follow these steps:
 
 ## Sponsors
 
-Creazilla on Perl has been sponsored by [Creazilla.com](http://Creazilla.com). 
+Creazilla on Perl has been sponsored by [Creazilla.com](https://creazilla.com/). 
 
 ## Core Developers
 
@@ -71,5 +71,7 @@ Alex
 
 Apache 2.0
 
-See also : https://creazilla.com/pages/creazilla-on-perl
+## See also
+
+https://creazilla.com/pages/creazilla-on-perl
 

@@ -111,7 +111,7 @@ See the README.md for the full changelog.
 
 =head1 SPONSORS
 
-Creazilla on Perl has been sponsored by L<Creazilla.com|http://Creazilla.com>.
+Creazilla on Perl has been sponsored by L<Creazilla.com|https://creazilla.com/>.
 
 =head1 AUTHORS
 
@@ -123,7 +123,10 @@ Alex (Contributor)
 
 Apache 2.0
 
-See also: L<https://creazilla.com/pages/creazilla-on-perl>
+=head1 SEE ALSO
+
+L<https://creazilla.com/pages/creazilla-on-perl>
+L<https://github.com/alextech7/crop>
 
 =cut
 
