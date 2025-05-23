@@ -1,4 +1,32 @@
 package Crop::Debug;
+
+=pod
+
+=head1 NAME
+
+Crop::Debug - Debugging utilities for the Crop framework
+
+=head1 SYNOPSIS
+
+    use Crop::Debug;
+    # ...usage...
+
+=head1 DESCRIPTION
+
+Crop::Debug provides debugging utilities for the Crop framework.
+
+=head1 AUTHORS
+
+Euvgenio (Core Developer)
+
+Alex (Contributor)
+
+=head1 COPYRIGHT AND LICENSE
+
+Apache 2.0
+
+=cut
+
 use base qw/ Crop Exporter /;
 
 =begin nd

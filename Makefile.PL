@@ -1,13 +1,13 @@
 use ExtUtils::MakeMaker;
 
 WriteMakefile(
-    NAME         => 'Crop::Config',
-    VERSION_FROM => 'lib/Crop/Config.pm', # Path to the module's version
+    NAME         => 'Crop',
+    VERSION_FROM => 'lib/Crop.pm',
     AUTHOR       => 'Alex <alextechnologies@gmail.com>',
     ABSTRACT     => 'A configuration management module for Crop framework',
     LICENSE      => 'perl',
     PREREQ_PM    => {
-        'Test::More' => 0, # Minimum version of Test::More
+        'Test::More' => 0,
         'XML::LibXML' => 0,
         'Time::Stamp' => 0,
         'Clone' => 0,

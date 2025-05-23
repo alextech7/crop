@@ -1,4 +1,32 @@
 package Crop::File;
+
+=pod
+
+=head1 NAME
+
+Crop::File - File utilities for the Crop framework
+
+=head1 SYNOPSIS
+
+    use Crop::File;
+    # ...usage...
+
+=head1 DESCRIPTION
+
+Crop::File provides file-related utilities for the Crop framework.
+
+=head1 AUTHORS
+
+Euvgenio (Core Developer)
+
+Alex (Contributor)
+
+=head1 COPYRIGHT AND LICENSE
+
+Apache 2.0
+
+=cut
+
 use base qw/ Crop::Object::Simple /;
 
 =begin nd

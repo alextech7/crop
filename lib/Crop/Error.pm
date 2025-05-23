@@ -1,4 +1,32 @@
 package Crop::Error;
+
+=pod
+
+=head1 NAME
+
+Crop::Error - Error handling utilities for the Crop framework
+
+=head1 SYNOPSIS
+
+    use Crop::Error;
+    # ...usage...
+
+=head1 DESCRIPTION
+
+Crop::Error provides error handling utilities for the Crop framework.
+
+=head1 AUTHORS
+
+Euvgenio (Core Developer)
+
+Alex (Contributor)
+
+=head1 COPYRIGHT AND LICENSE
+
+Apache 2.0
+
+=cut
+
 use base qw/ Exporter /;
 
 =begin nd

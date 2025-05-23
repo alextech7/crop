@@ -1,4 +1,32 @@
 package Crop::Unit;
+
+=pod
+
+=head1 NAME
+
+Crop::Unit - Unit utilities for the Crop framework
+
+=head1 SYNOPSIS
+
+    use Crop::Unit;
+    # ...usage...
+
+=head1 DESCRIPTION
+
+Crop::Unit provides unit-related utilities for the Crop framework.
+
+=head1 AUTHORS
+
+Euvgenio (Core Developer)
+
+Alex (Contributor)
+
+=head1 COPYRIGHT AND LICENSE
+
+Apache 2.0
+
+=cut
+
 use base qw/ Crop::Object::Simple /;
 
 =begin nd

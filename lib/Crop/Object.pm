@@ -1,4 +1,33 @@
 package Crop::Object;
+
+=pod
+
+=head1 NAME
+
+Crop::Object - Base object class for the Crop framework
+
+=head1 SYNOPSIS
+
+    use base qw/ Crop::Object /;
+    # ...usage...
+
+=head1 DESCRIPTION
+
+Crop::Object is the base object class for the Crop framework, providing common object functionality.
+
+=head1 AUTHORS
+
+Euvgenio (Core Developer)
+
+Alex (Contributor)
+
+=head1 COPYRIGHT AND LICENSE
+
+Apache 2.0
+
+=cut
+
+
 use base qw/ Crop /;
 
 =begin nd
@@ -328,7 +357,7 @@ sub _attrs {
 Method: AUTOLOAD ($AUTOLOAD)
 	Generate accessors for class attributes.
 
-	Class declaration specifies a mode - {mode => 'read'}, 'write', or 'read/write'.
+	Class declaration specifies a mode - {mode => 'read'}, 'write', or 'read/writer'.
 
 	Call of inappropriate accessor arise an error.
 

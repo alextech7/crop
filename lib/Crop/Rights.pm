@@ -1,4 +1,32 @@
 package Crop::Rights;
+
+=pod
+
+=head1 NAME
+
+Crop::Rights - Role-based access and rights management for Crop framework
+
+=head1 SYNOPSIS
+
+    use Crop::Rights;
+    # ...usage...
+
+=head1 DESCRIPTION
+
+Crop::Rights provides role-based access and rights management for the Crop framework.
+
+=head1 AUTHORS
+
+Euvgenio (Core Developer)
+
+Alex (Contributor)
+
+=head1 COPYRIGHT AND LICENSE
+
+Apache 2.0
+
+=cut
+
 use base qw/ Crop::Object /;
 
 =begin nd

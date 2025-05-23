@@ -1,12 +1,85 @@
 package Crop::Config;
 
-our $VERSION = '0.1.25';
+=pod
 
-=begin nd
-Class: Crop::Config
-	Configuration data.
-	
-	SCHEMA_ORIGIN is ONLY constant what you MUST set to the actual value.
+=head1 NAME
+
+Crop::Config - Configuration management for the Crop framework
+
+=head1 VERSION
+
+0.1.26
+
+=head1 SYNOPSIS
+
+    use Crop::Config;
+    my $config = Crop::Config->data;
+
+=head1 DESCRIPTION
+
+Crop::Config provides configuration data for the Crop framework. It loads, validates, and parses the main configuration XML file, supporting environment-based overrides and schema validation.
+
+=head1 CONSTANTS
+
+=over 4
+
+=item * CONF_PATH
+Directory containing configuration files. Defaults to C<~/.crop>, can be overridden by the C<CROP_CONFIG> environment variable.
+
+=item * CONFIG_FILE
+Name of the main configuration file (default: C<global.xml>).
+
+=item * SCHEMA_FILE
+Name of the schema file for validating the main config (default: C<global.xsd>).
+
+=item * SCHEMA_ORIGIN
+URL to the original schema. This is the only constant you MUST set to the actual value.
+
+=back
+
+=head1 METHODS
+
+=head2 data
+
+    my $config = Crop::Config->data;
+
+Returns a hash reference containing all configuration parameters from the config file.
+
+=head1 INSTALLATION
+
+To install this module, run the following commands:
+
+    perl Makefile.PL
+    make
+    make test
+    make install
+
+=head1 DEPENDENCIES
+
+=over 4
+
+=item * XML::LibXML
+=item * Time::Stamp
+=item * Clone
+=item * XML::LibXSLT
+=item * JSON
+=item * CGI::Cookie
+=item * CGI::Fast
+
+=back
+
+=head1 AUTHORS
+
+Euvgenio (Core Developer)
+
+Alex (Contributor)
+
+=head1 COPYRIGHT AND LICENSE
+
+Apache 2.0
+
+See also: L<https://creazilla.com/pages/creazilla-on-perl>
+
 =cut
 
 use v5.14;

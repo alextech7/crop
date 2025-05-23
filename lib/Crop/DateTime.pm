@@ -1,4 +1,88 @@
 package Crop::DateTime;
+
+=pod
+
+=head1 NAME
+
+Crop::DateTime - General purpose Date and Time class for Crop framework
+
+=head1 SYNOPSIS
+
+    use Crop::DateTime;
+    my $dt = Crop::DateTime->new();
+    my $epoch_ms = $dt->epoch_milli;
+    my $timestamp = $dt->timestamp;
+
+=head1 DESCRIPTION
+
+Crop::DateTime provides date and time handling for the Crop framework, including high-resolution time, time zone support, and formatting utilities. By default, the time zone is set to Moscow time (UTC+3).
+
+=head1 CONSTANTS
+
+=over 4
+
+=item * DEFAULT_TIMEZONE
+The default time zone (C<03:00>, Moscow time).
+
+=back
+
+=head1 ATTRIBUTES
+
+=over 4
+
+=item * sec
+Seconds since the epoch (read-only).
+
+=item * usec
+Microseconds (read-only).
+
+=item * tz
+Time zone (defaults to C<03:00>).
+
+=back
+
+=head1 METHODS
+
+=head2 new([$time])
+
+    my $dt = Crop::DateTime->new();
+    my $dt = Crop::DateTime->new('2025-05-23 12:34:56.123456+03');
+
+Creates a new Crop::DateTime object. If C<$time> is provided (in Postgres format), it is used; otherwise, the current time is used.
+
+=head2 epoch_milli
+
+    my $ms = $dt->epoch_milli;
+
+Returns the epoch time in milliseconds as a string.
+
+=head2 timestamp
+
+    my $ts = $dt->timestamp;
+
+Returns the time in the format C<'TIMESTAMP(6) WITH TIME ZONE'>.
+
+=head1 DEPENDENCIES
+
+=over 4
+
+=item * Time::HiRes
+=item * Date::Parse
+
+=back
+
+=head1 AUTHORS
+
+Euvgenio (Core Developer)
+
+Alex (Contributor)
+
+=head1 COPYRIGHT AND LICENSE
+
+Apache 2.0
+
+=cut
+
 use base qw/ Crop::Object /;
 
 =begin nd

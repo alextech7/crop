@@ -1,4 +1,32 @@
 package Crop::Install;
+
+=pod
+
+=head1 NAME
+
+Crop::Install - Installation utilities for the Crop framework
+
+=head1 SYNOPSIS
+
+    use Crop::Install;
+    # ...usage...
+
+=head1 DESCRIPTION
+
+Crop::Install provides installation-related utilities for the Crop framework.
+
+=head1 AUTHORS
+
+Euvgenio (Core Developer)
+
+Alex (Contributor)
+
+=head1 COPYRIGHT AND LICENSE
+
+Apache 2.0
+
+=cut
+
 use base qw/ Crop /;
 
 =begin nd

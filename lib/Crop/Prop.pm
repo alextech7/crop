@@ -1,5 +1,31 @@
 package Crop::Prop;
-use base qw/ Crop::Object::Simple /;
+
+=pod
+
+=head1 NAME
+
+Crop::Prop - Property utilities for the Crop framework
+
+=head1 SYNOPSIS
+
+    use Crop::Prop;
+    # ...usage...
+
+=head1 DESCRIPTION
+
+Crop::Prop provides property-related utilities for the Crop framework.
+
+=head1 AUTHORS
+
+Euvgenio (Core Developer)
+
+Alex (Contributor)
+
+=head1 COPYRIGHT AND LICENSE
+
+Apache 2.0
+
+=cut
 
 =begin nd
 Class: Crop::Prop
